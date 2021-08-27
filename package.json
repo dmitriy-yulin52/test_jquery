@@ -25,6 +25,8 @@
     "webpack-stream": "^5.2.1"
   },
   "dependencies": {
-    "npm-i": "0.0.2"
+    "jquery": "^3.6.0",
+    "npm-i": "0.0.2",
+    "slick-carousel": "^1.8.1"
   }
 }
