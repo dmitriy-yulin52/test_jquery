@@ -1,6 +1,14 @@
 const forms = () => {
     const form = document.querySelectorAll('form')
     const inputs = document.querySelectorAll('input')
+    const phoneInputs = document.querySelectorAll('input[name = "user_phone"]')
+
+    phoneInputs.forEach((item)=> {
+        item.addEventListener('input',()=> {
+            item.value = item.value.replace(/\D/, '')
+        })
+    })
+
 
     const message = {
         loading: 'Загрузка',
@@ -39,6 +47,7 @@ const forms = () => {
                     statusMessage.textContent = message.success
                 })
                 .catch((rej) => {
+                    console.log(rej)
                 statusMessage.textContent = message.failure
             }).finally(()=>{
                 clearInputs()

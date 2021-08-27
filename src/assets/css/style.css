@@ -369,6 +369,10 @@ textarea:focus {
 .glazing_block {
   display: inline-block;
 }
+.glazing_block:hover {
+  cursor: pointer;
+  transform: scale(0.9);
+}
 
 .glazing_block img {
   display: block;
@@ -942,6 +946,7 @@ textarea:focus {
     height: 70px;
     cursor: pointer;
   }
+
 
 .popup_calc_close {
   position: absolute;
@@ -1751,6 +1756,7 @@ textarea:focus {
   .popup_calc_content .balcon_icons img {
     width: 20%;
   }
+
 
   .popup_calc_content .big_img img {
     margin-bottom: 2rem;
